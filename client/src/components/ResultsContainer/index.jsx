@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
+import SkeletonList from '../../components/SkeletonList';
 import './index.css'
 
 export default function ResultsContainer(props) {
     console.log(props.results)
     return (
         <ul className="list-group">
-            {props.results.map((book) => {
+            {props.results.length !== 0 ? props.results.map((book) => {
 
                 return book.volumeInfo ?
                     <li className="list-group-item list-group-flush" key={book.id}>
@@ -24,7 +25,9 @@ export default function ResultsContainer(props) {
                         By: {book.author}
                     </li>
 
-            })}
+            })
+            : <SkeletonList />
+        }
         </ul>
     )
 }
