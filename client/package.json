@@ -2,8 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://localhost:5000",
-  "proxy": "http://localhost:5000",
+  "proxy": "https://mern-js-books-search.herokuapp.com",
   "dependencies": {
     "react": "^16.9.0",
     "react-dom": "^16.9.0",

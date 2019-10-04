@@ -1,0 +1,12 @@
+.navbar {
+    border: 30px burlywood !important;
+    background-color: #fdf3e6;
+}
+
+a.btn:hover {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+a.btn {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+}

@@ -3,12 +3,8 @@ import './index.css';
 
 export default function Hero(props) {
     return (
-        <div className="jumbotron d-flex align-items-center justify-content-between">
-            {props.children}
-            <div>
-                <a href='/' id="searchLink" className="btn btn-light m-2">Search Page</a>
-                <a href='/favorites' id='faveLink' className="btn btn-light m-2">Favorites</a>
-            </div>
+        <div className="hero jumbotron d-flex align-items-center justify-content-center">
+            <content className="display-1">&lt;MERN&gt; Google Books<br />Search and Save</content>
         </div>
     )
 }

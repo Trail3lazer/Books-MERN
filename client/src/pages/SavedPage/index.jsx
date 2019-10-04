@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import ResultsContainer from '../../components/ResultsContainer';
-import Hero from '../../components/Hero';
 import './index.css'
 
 const SavedPage = (props) => {
@@ -15,7 +14,6 @@ const SavedPage = (props) => {
 
     return (
         <div className="container">
-            <Hero children={<div />}/>
             <ResultsContainer results={faves} />
         </div>
     )

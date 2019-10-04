@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Results from '../../components/ResultsContainer';
 import SearchBar from '../../components/SearchBar';
-import Hero from '../../components/Hero'
+import Hero from '../../components/SearchContainer'
 
 import './index.css';
 

@@ -2,6 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import Saved from './pages/SavedPage';
 import Search from './pages/SearchPage';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
 import './App.css';
 
 function App() {
@@ -24,6 +26,7 @@ function App() {
           title: obj.volumeInfo.title,
           authors: obj.volumeInfo.authors.join(', '),
           previewLink: obj.volumeInfo.previewLink,
+          description: obj.volumeInfo.description,
           imageLinks: {
             thumbnail:  obj.volumeInfo.imageLinks.thumbnail
           }
@@ -46,7 +49,10 @@ function App() {
   }
 
   return (
-    <Router className="App">
+    <div  className="App">
+    <Navbar />
+    <Hero />
+    <Router>
       <Switch>
 
         <Route path="/favorites" component={()=>{
@@ -59,6 +65,7 @@ function App() {
 
       </Switch>
     </Router>
+    </div>
   );
 }
 
